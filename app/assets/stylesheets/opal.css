@@ -52,6 +52,10 @@ td.right{padding-left:10px;width:50%}
 .hover{opacity:1.00;filter:alpha(opacity=100);-moz-opacity:1.0;-khtml-opacity: 1.0;}
 .disabled{opacity:0.50;filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;}
 
+/* Lists */
+ul.right li, ul.left li{display:block}
+ul.right li{float:right}
+ul.left li{float:left}
 ul.sortable, ul.collapsed{margin:0px;padding:0px;list-style-type:none;}
 	ul.sortable li, ul.collapsed li{list-style-image:none;padding:0px;margin:0px;}
 	ul.sortable li{cursor:move;}
@@ -67,13 +71,21 @@ ul.sortable, ul.collapsed{margin:0px;padding:0px;list-style-type:none;}
 	/* Item Page */
 	.plugins .plugin_box{clear:both}
 
-/* Sections & Menus */
+/* Sections */
 .section{}
 	.section .header{margin-bottom:5px}
 	.section .header td{vertical-align:middle}
 
+/* Menus */
+
 .menu{text-align:center}
 	.menu .last{margin-bottom:0px}
+div.record{position:relative;}
+div.record_menu{/*position:absolute;top:-10px;right:0;*//*display:none;*/}
+div.record:hover div.record_menu{}
+	div.record_menu ul.record_menu{list-style:none;padding:0px;margin:0px;}	
+		div.record_menu ul.record_menu li{}
+		
 
 /* Boxes */
 .extra_options_box{padding:10px;}
@@ -112,12 +124,6 @@ ul.sortable, ul.collapsed{margin:0px;padding:0px;list-style-type:none;}
 .buttons{text-align:center;margin:10px 0px}
 #editor_wrapper{margin-bottom:10px;}
 
-/* Menus */
-div.record{position:relative;}
-div.record_menu{position:absolute;top:-10px;right:0;/*display:none;*/}
-div.record:hover div.record_menu{display:block}
-div.record_menu > ul{list-style:none;text-align:right;}
-	div.record_menu > ul li{display:inline;}
 
 /* Other Stuff */
 .main_content_top_bar{height:25px;}
