@@ -1,5 +1,5 @@
 # Schema: group by category(log, notice, etc.), use interpolation(ie: %{item}), anything from user perspective(ie: "My Account") should be labeled: user_account, all verbs must not use any tense(created_account = bad, create_account = good). 
-en:
+fr:
   name: Opal
   greeting: Bonjour %{name}! # call with t(:greeting, :name => "John")
   # Sections
@@ -61,7 +61,7 @@ en:
     open: Ouvrir
     from: De
     to: A
-    reply: Repondre
+    reply: Répondre
     sent: Envoyé
     details: Details
     positive: "Oui"
@@ -88,49 +88,49 @@ en:
     preview: Prévisualiser
     version: Version
     website: Website
-    install: Install
-    uninstall: Uninstall
-    security: Security
+    install: Installer
+    uninstall: Désinstaller
+    security: Securité
     information: Information
-    for: For
-    watermark: Watermark
-    stamp: Stamp    
-    main: Main
-    or: Or
+    for: Pour
+    watermark: Signature
+    stamp: Empreinte
+    main: Principal
+    or: ou
     mode: Mode
-    effects: Effects    
-    advanced: Advanced 
+    effects: Effets    
+    advanced: Avancé 
     mobile: Mobile
-    full: Full   
+    full: Entier  
     rss: RSS
     spacer: "" # Spacer icon doesn't require a title
-    done: Done
-    default: Default
-    tools: Tools
+    done: Fini
+    default: Defaut
+    tools: Outils
     slideshow: Slideshow
-    start: Start
-    approval: Approval
-    single: Single
+    start: Démarrer
+    approval: Approbation
+    single: Simple
     multiple: Multiple
-    cloud: Cloud
-    forget: Forget
+    cloud: Nuage
+    forget: Oublier
   # Flash Messages & Notices
   notice:
-    save_success: Your changes have been successfully saved!
-    save_failure: Your changes could not be saved!
-    item_save_success: This %{item} has been saved!
-    item_save_failure: This %{item} could not be saved.
-    item_create_success: %{item} created!
-    item_create_failure: %{item} could not be created.    
-    item_delete_success: %{item} deleted!
-    item_delete_failure: %{item} could not be deleted.
-    item_install_success: %{item} installed!
-    item_install_failure: This %{item} could not be installed. 
-    item_uninstall_success: %{item} uninstalled!
-    item_uninstall_failure: This %{item} could not be uninstalled.
-    item_approve_success: This %{item} has been approved. Thanks!
-    item_unapprove_success: This %{item} has been marked as unapproved.
-    item_import_success: %{count} %{items} imported successfully.
+    save_success: Vos modifications ont été enregistrées avec succès ! 
+    save_failure: Vos modificqations n'ont pu être sauvegardées !
+    item_save_success: Cet %{item} a été enregistré!
+    item_save_failure: Cet %{item} n'a pas pu être enregistré.
+    item_create_success: %{item} crée!
+    item_create_failure: %{item} n'a pas pu être crée.    
+    item_delete_success: %{item} effacé!
+    item_delete_failure: %{item} n'a pu être effacé.
+    item_install_success: %{item} installé!
+    item_install_failure: Cet %{item} n'a pu étre installé. 
+    item_uninstall_success: %{item} désinstallé!
+    item_uninstall_failure: Cet %{item} n'a pu être désinstallé.
+    item_approve_success: Cet %{item} a été approuvé. Merci!
+    item_unapprove_success: Cet %{item} a été marqué comme non appprouvé.
+    item_import_success: %{count} %{items} importé avec succçès.
     item_forgot_to_select: You forgot to select the %{item}.
     item_not_found: %{item} not found.
     item_invalid: Sorry, this %{item} is invalid.    
